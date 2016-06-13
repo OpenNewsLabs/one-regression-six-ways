@@ -81,7 +81,3 @@ fig.savefig('fig.png')
 
 
 
-
-
-
-
