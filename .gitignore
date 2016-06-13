@@ -3,5 +3,6 @@ Python/include
 Python/lib
 Python/share
 
+*.Python
 *.json
 *.pyc
