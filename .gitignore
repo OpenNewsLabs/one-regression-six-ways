@@ -1,0 +1,7 @@
+Python/bin
+Python/include
+Python/lib
+Python/share
+
+*.json
+*.pyc
