@@ -2,6 +2,7 @@ Python/bin
 Python/include
 Python/lib
 Python/share
+Python/local
 
 *.json
 *.pyc

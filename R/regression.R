@@ -1,5 +1,5 @@
 # set working directory
-setwd("/Users/christinezhang/Projects/regression/R")
+# setwd("/Users/christinezhang/Projects/regression/R")
 
 # read data
 d <- read.csv("data.csv")
@@ -10,8 +10,7 @@ summary(reg)
 
 # assess the regression model
 
-png('plots.png', width = 8, height = 7, units = 'in', res = 200)
+png('regplots.png', width = 8, height = 7, units = 'in', res = 200)
 par(mfrow = c(2,2))
 plot(reg)
 dev.off()
-
