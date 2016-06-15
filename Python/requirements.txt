@@ -1,7 +1,8 @@
 jupyter
 matplotlib
 pandas
-statsmodels
-scipy
 patsy
+Cython
+statsmodels
+scikit-learn
 seaborn

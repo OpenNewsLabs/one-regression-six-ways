@@ -4,13 +4,12 @@ import math
 import pandas as pd
 import numpy as np
 import matplotlib
-matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 
-# set working directory
-os.chdir('/Users/christinezhang/Projects/regression/Python')
+# set working directory - just in case
+#os.chdir('/Users/christinezhang/Projects/regression/Python')
 
 # read data
 d = pd.read_csv('data.csv')
@@ -35,22 +34,23 @@ l = plt.axhline(y = 0, color = 'grey', linestyle = 'dashed')
 plt.xlabel('Fitted values')
 plt.ylabel('Residuals')
 plt.title('Residuals vs Fitted')
-print(residsvfitted)
+plt.show(residsvfitted)
 
 ## q-q plot
 qqplot = sm.qqplot(results['std_resids'], line='s')
-print(qqplot)
+plt.show(qqplot)
+
 
 ## scale-location
 scalelocplot = plt.plot(results['fitted'], abs(results['std_resids'])**.5,  'o')
 plt.xlabel('Fitted values')
 plt.ylabel('Square Root of |standardized residuals|')
 plt.title('Scale-Location')
-print(scalelocplot)
+plt.show(scalelocplot)
 
 ## residuals vs. leverage
 residsvlevplot = sm.graphics.influence_plot(lm, criterion = 'Cooks', size = 2)
-print(residsvlevplot)
+plt.show(residsvlevplot)
 
 
 # 4 plots in one window
