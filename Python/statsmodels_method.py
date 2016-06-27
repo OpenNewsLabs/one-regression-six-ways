@@ -79,7 +79,8 @@ ax4 = fig.add_subplot(2, 2, 4)
 sm.graphics.influence_plot(lm, criterion = 'Cooks', size = 2, ax = ax4)
 
 plt.tight_layout()
-fig.savefig('fig.png')
+fig.savefig('regplots.png')
+
 
 
 
