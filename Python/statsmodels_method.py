@@ -9,7 +9,7 @@ import statsmodels.api as sm
 import statsmodels.formula.api as smf
 
 # set working directory - just in case
-#os.chdir('/Users/christinezhang/Projects/regression/Python')
+# os.chdir('/Users/christinezhang/Projects/regression/Python')
 
 # read data
 d = pd.read_csv('data.csv')
@@ -25,8 +25,10 @@ lm.summary()
 
 ## put residuals (raw & standardized) plus fitted values into a data frame
 results = pd.DataFrame({'resids': lm.resid,
-                          'std_resids': lm.resid_pearson,
-                          'fitted': lm.predict()})
+                        'std_resids': lm.resid_pearson,
+                        'fitted': lm.predict()})
+
+results.head()
 
 ## raw residuals vs. fitted
 residsvfitted = plt.plot(results['fitted'], results['resids'],  'o')

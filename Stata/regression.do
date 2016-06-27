@@ -15,7 +15,10 @@ regress health log_income
 * calculate residuals (raw & standardized) plus fitted values
 predict resids, residuals
 predict std_resids, rstandard
+predict stu_resids, rstudent
 predict fitted 
+
+list resids std_resids stu_resids fitted in 1/5
 
 * assess the regression model
 
