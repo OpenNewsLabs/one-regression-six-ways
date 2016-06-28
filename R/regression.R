@@ -20,11 +20,6 @@ results <- as.data.frame(cbind(resid = resid(reg),
                  stu_resids = rstudent(reg),
                  fitted = fitted(reg)))
 
-library('dplyr')
 
-results <- results %>% mutate(sd = sd(fitted))
-head(results)
-results$resid.pearson <- results$resid/results$sd
-head(results)
 
 
