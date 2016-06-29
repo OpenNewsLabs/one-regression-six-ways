@@ -19,7 +19,7 @@ d['log_income'] = np.log(d['income'])
 
 # run regression
 lm = smf.ols(formula = 'health ~ log_income', data = d).fit()
-lm.summary()
+print(lm.summary())
 
 # assess the regression model
 
@@ -29,7 +29,7 @@ results = pd.DataFrame({'country': d.country,
                         'std_resids': lm.resid_pearson,
                         'fitted': lm.predict()})
 
-results.head()
+print(results.head())
 
 ## raw residuals vs. fitted
 residsvfitted = plt.plot(results['fitted'], results['resids'],  'o')
@@ -53,7 +53,6 @@ plt.show(scalelocplot)
 ## residuals vs. leverage
 residsvlevplot = sm.graphics.influence_plot(lm, criterion = 'Cooks', size = 2)
 plt.show(residsvlevplot)
-
 
 # 4 plots in one window
 fig = plt.figure(figsize = (8, 8), dpi = 100)
