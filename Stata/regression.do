@@ -1,4 +1,4 @@
-* set working directory
+* set working directory - modify as necessary
 * cd "V:/czhang/Stata"
 
 log using "output.log", replace
@@ -18,7 +18,7 @@ predict std_resids, rstandard
 predict stu_resids, rstudent
 predict fitted 
 
-list resids std_resids stu_resids fitted in 1/5
+list country resids std_resids stu_resids fitted in 1/5
 
 * assess the regression model
 
