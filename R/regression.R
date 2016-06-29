@@ -1,4 +1,4 @@
-# set working directory
+# set working directory - modify as necessary
 # setwd("/Users/christinezhang/Projects/regression/R")
 
 # read data

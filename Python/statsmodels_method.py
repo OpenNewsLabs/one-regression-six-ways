@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 
-# set working directory - just in case
+# set working directory - modify as necessary
 # os.chdir('/Users/christinezhang/Projects/regression/Python')
 
 # read data
@@ -24,7 +24,8 @@ lm.summary()
 # assess the regression model
 
 ## put residuals (raw & standardized) plus fitted values into a data frame
-results = pd.DataFrame({'resids': lm.resid,
+results = pd.DataFrame({'country': d.country,
+                        'resids': lm.resid,
                         'std_resids': lm.resid_pearson,
                         'fitted': lm.predict()})
 
@@ -41,7 +42,6 @@ plt.show(residsvfitted)
 ## q-q plot
 qqplot = sm.qqplot(results['std_resids'], line='s')
 plt.show(qqplot)
-
 
 ## scale-location
 scalelocplot = plt.plot(results['fitted'], abs(results['std_resids'])**.5,  'o')
