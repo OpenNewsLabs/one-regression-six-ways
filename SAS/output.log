@@ -1,0 +1,42 @@
+                                          The SAS System          16:53 Tuesday, June 28, 2016   1
+
+                                        The REG Procedure
+                                          Model: MODEL1
+                                   Dependent Variable: health
+
+                             Number of Observations Read         187
+                             Number of Observations Used         187
+
+
+                                       Analysis of Variance
+
+                                              Sum of           Mean
+          Source                   DF        Squares         Square    F Value    Pr > F
+
+          Model                     1     7278.46275     7278.46275     346.13    <.0001
+          Error                   185     3890.16156       21.02790
+          Corrected Total         186          11169
+
+
+                       Root MSE              4.58562    R-Square     0.6517
+                       Dependent Mean       71.67326    Adj R-Sq     0.6498
+                       Coeff Var             6.39795
+
+
+                                       Parameter Estimates
+
+                                    Parameter       Standard
+              Variable      DF       Estimate          Error    t Value    Pr > |t|
+
+              Intercept      1       24.51405        2.55689       9.59      <.0001
+              log_income     1        5.16273        0.27750      18.60      <.0001
+                                          The SAS System          16:53 Tuesday, June 28, 2016   2
+
+                                                             std_        stu_
+                  Obs    country                 fitted     resids      resids
+
+                    1    Afghanistan            63.5581    -1.30217    -1.30463
+                    2    Albania                72.3751     0.79265     0.79185
+                    3    Algeria                73.5886     0.63677     0.63574
+                    4    Andorra                80.0075     0.89919     0.89872
+                    5    Angola                 70.6579    -2.11192    -2.13206

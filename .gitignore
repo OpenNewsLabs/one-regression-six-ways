@@ -6,3 +6,5 @@ Python/local
 
 *.json
 *.pyc
+
+R/.Rhistory
