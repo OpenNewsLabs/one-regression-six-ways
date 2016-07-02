@@ -1,6 +1,6 @@
 # one-regression-six-ways
 
-Code and data for my blog post, [**6 ways to run a "simple" regression**](http://underthecurve.github.io/jekyll/update/2016/07/01/one-regresison-six-ways.html), in which I ran a regression of health vs. income using the following 6 tools:
+Code and data for my blog post, [**6 ways to run a "simple" regression**](http://underthecurve.github.io/jekyll/update/2016/07/01/one-regression-six-ways.html), in which I ran a regression of health vs. income using the following 6 tools:
 
 * Excel
 * R
